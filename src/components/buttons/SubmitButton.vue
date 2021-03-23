@@ -1,5 +1,5 @@
 <template>
-  <button type="submit" class="a-submitButton">
+  <button type="submit" data-qa="submit" class="a-submitButton">
     <slot></slot>
   </button>
 </template>

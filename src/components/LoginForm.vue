@@ -29,32 +29,6 @@
       </div>
     </div>
 
-    <!-- <div class="a-showCase">
-      <custom-checkbox
-        name="remember_me1"
-        id="remember_me1"
-        labelText="Remember Me - 1"
-        checkbox="✔️"
-        :checked="true"
-      ></custom-checkbox>
-
-      <custom-checkbox
-        name="remember_me2"
-        id="remember_me2"
-        labelText="Remember Me - 2"
-        checkbox="✓"
-        :checked="true"
-      ></custom-checkbox>
-
-      <custom-checkbox
-        name="remember_me3"
-        id="remember_me3"
-        labelText="Remember Me - 3"
-        checkbox="✔︎"
-        :checked="true"
-      ></custom-checkbox>
-    </div> -->
-
     <submit-button>Login</submit-button>
   </form>
 </template>

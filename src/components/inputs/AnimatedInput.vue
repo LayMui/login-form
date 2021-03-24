@@ -6,6 +6,7 @@
       placeholder=" "
       name="email"
       :type="inputType"
+      :data-qa="inputType"
     />
 
     <div class="a-textInput__placeholder">{{ placeholder }}</div>

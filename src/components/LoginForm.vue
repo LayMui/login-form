@@ -24,7 +24,7 @@
         ></custom-checkbox>
 
         <link-button href="#" linkText="Forgot Password">
-          I forgot password 🤦🏻‍♂️
+          forgot password 🌻
         </link-button>
       </div>
     </div>

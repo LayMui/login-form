@@ -28,7 +28,6 @@ export default {
 </script>
 
 <style lang="scss">
-/* GLOBAL SCSS IMPORT */
-//@import "../scss/main.scss";
+
 
 </style>

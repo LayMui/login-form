@@ -1,34 +1,25 @@
 <template>
   <div id="app">
-    <div class="m-flexContainer">
-      <div class="a-heroImage"></div>
+  
+    
+    <router-view/>
+    
 
-      <div class="m-formContainer">
-        <LoginForm :title="headerText" />
-      </div>
-    </div>
-   <router-view />
   </div>
 </template>
 
-<script>
-import LoginForm from "./components/LoginForm.vue";
+<style>
 
-export default {
-  name: "app",
-  data() {
-    return {
-      headerText: "Welcome to Sunflower field"
-    };
-  },
-  components: {
-    LoginForm
-  }
-};
-</script>
+#nav {
+  padding: 30px;
+}
 
-<style lang="scss">
-/* GLOBAL SCSS IMPORT */
-@import "./scss/main.scss";
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
 
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
 </style>

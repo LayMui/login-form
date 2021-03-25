@@ -18,7 +18,7 @@ export default {
   methods: {
     loginToSunflowerField() {
        
-      alert('Login activated')
+        this.$router.push("/Dashboard");
     }
   }
 }

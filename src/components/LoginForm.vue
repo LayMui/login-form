@@ -3,7 +3,7 @@
     <Header :title="title" />
 
     <div class="m-loginForm__group">
-      <animated-input placeholder="Email" animateBorder />
+      <animated-input placeholder="Email or Name" animateBorder />
     </div>
 
     <div class="m-loginForm__group">

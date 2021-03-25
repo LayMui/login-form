@@ -7,7 +7,7 @@
         <LoginForm :title="headerText" />
       </div>
     </div>
-   
+   <router-view />
   </div>
 </template>
 

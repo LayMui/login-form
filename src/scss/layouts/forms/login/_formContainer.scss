@@ -1,15 +1,16 @@
 $form-back-color: $wild-sand;
 
 .m-formContainer {
- // flex: 1;
+  flex: 1;
   min-height: 100vh;
 
   padding: 173px 55px 55px;
 
   background-color: $form-back-color;
 
-  display: flex;
-  flex-wrap: nowrap;
+  // Use CSS flexbox 
+  // display: flex;
+  // flex-wrap: nowrap;
   
 
   @media screen and (max-width: 450px) {

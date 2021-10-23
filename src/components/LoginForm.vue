@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    <submit-button>Login</submit-button>
+    <submit-button v-on:click="login()">Login</submit-button>
   </form>
 </template>
 
@@ -41,13 +41,31 @@ import LinkButton from "./buttons/LinkButton.vue";
 import SubmitButton from "./buttons/SubmitButton.vue";
 
 export default {
+  name: 'Login',
   data() {
     return {
-      email: "",
-      password: "",
-      rememberMe: false
-    };
+      input: {
+        email: "",
+        password: "",
+        rememberMe: false
+      }
+    }
   },
+  methods: {
+    login() {
+        if(this.input.email != "" && this.input.password != "") {
+          if(this.input.email == this.$parent.mockAccount.email && this.input.password == this.$parent.mockAccount.password) {
+            this.$emit("authenticated", true);
+            this.$router.replace({ name: "secure" });
+        } else {
+            console.log("The username and / or password is incorrect");
+        }
+    } else {
+        console.log("A username and password must be present");
+    }
+      }
+  },
+ 
   components: {
     Header,
     AnimatedInput,

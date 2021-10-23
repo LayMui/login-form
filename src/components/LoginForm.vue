@@ -3,11 +3,13 @@
     <Header :title="title" />
 
     <div class="m-loginForm__group">
-      <animated-input placeholder="Email or Name" animateBorder />
+      <animated-input name="email" v-model="input.email" placeholder="Email or Name" animateBorder />
     </div>
 
     <div class="m-loginForm__group">
       <animated-input
+       name="password"
+       v-model="input.password"
         placeholder="Password"
         animateBorder
         inputType="password"
